@@ -22,3 +22,21 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* GALLERY TASK 3 */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+
+  list-style: none;
+  
+  gap: 20px;
+}
+
+.gallery__img {
+  width: 240px;
+  border-radius: 10px;
+  border: 2px solid aquamarine;
+}
