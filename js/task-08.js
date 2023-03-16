@@ -33,7 +33,7 @@ function onFormSubmit (e) {
 
 
 // const formEl = document.querySelector(".login-form");
-// const handleCheckVerifyFormData = (event) => {
+// const verifyFormData = (event) => {
 //   event.preventDefault();
 //   const {
 //     elements: { email, password },
@@ -47,4 +47,4 @@ function onFormSubmit (e) {
 //   console.log(dataObj);
 //   formEl.reset();
 // };
-// formEl.addEventListener("submit", handleCheckVerifyFormData);
+// formEl.addEventListener("submit", verifyFormData);
