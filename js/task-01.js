@@ -4,10 +4,10 @@ const allItem = document.querySelectorAll(".item");
 const numberItem = allItem.length;
 console.log(`Number of categories: ${numberItem}`);
 
-allItem.forEach(item => {
-    const titleItem = item.firstElementChild.textContent;
-    const valueItem = item.lastElementChild.children.length;
+allItem.forEach((item) => {
+  const titleItem = item.firstElementChild.textContent;
+  const valueItem = item.lastElementChild.children.length;
 
-console.log(`Category: ${titleItem}`);
-console.log(`Elements: ${valueItem}`);
+  console.log(`Category: ${titleItem}`);
+  console.log(`Elements: ${valueItem}`);
 });
