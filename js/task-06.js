@@ -1,28 +1,28 @@
 const validationInput = document.querySelector("#validation-input");
 
+
 validationInput.addEventListener("blur", onInputBlur);
 
 function onInputBlur() {
   const inputLength = validationInput.value.length;
-  console.log(inputLength);
 
-  inputLength >= 6 ? onValidInput() : onInvalidInput();
+if (inputLength >= validationInput.dataset.length) {
+  onValidInput(); 
+} else {
+  onInvalidInput();
+};
+
+
+  // inputLength >= lengthValid ? onValidInput() : onInvalidInput(); функции не поддерживают тернарник
 }
 
 function onValidInput() {
-  validationInput.classList.add("valid");
   validationInput.classList.remove("invalid");
+  validationInput.classList.add("valid");//green
+  
 }
 
 function onInvalidInput() {
-  validationInput.classList.add("invalid");
   validationInput.classList.remove("valid");
+  validationInput.classList.add("invalid");//red
 }
-
-// if (inputLength >= 6) {
-//     validationInput.classList.add('valid');
-//     validationInput.classList.remove('invalid'); //valid = green
-// } else if(validationInput.value.length < 6) {
-//     validationInput.classList.add('invalid');
-//     validationInput.classList.remove('valid');//invalid = red
-// };
