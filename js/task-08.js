@@ -3,6 +3,8 @@
 const refs = {
   form: document.querySelector(".login-form"),
 };
+refs.form.addEventListener("submit", verifyFormData);
+
 
 const verifyFormData = (event) => {
   event.preventDefault();
@@ -18,7 +20,7 @@ const verifyFormData = (event) => {
   console.log(dataObj);
   refs.form.reset();
 };
-refs.form.addEventListener("submit", verifyFormData);
+
 
 
 
